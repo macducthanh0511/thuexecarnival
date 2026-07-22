@@ -320,6 +320,30 @@ button{ font-family:inherit; cursor:pointer; }
 .prose li{ position:relative; padding-left:22px; margin-bottom:9px; color:var(--text); }
 .prose li::before{ content:'—'; position:absolute; left:0; color:var(--gold); }
 
+/* ---------- Mobile sticky call/Zalo ---------- */
+.mobile-cta{ display:none; }
+@media (max-width:980px){
+  .mobile-cta{
+    display:flex; flex-direction:column; gap:10px;
+    position:fixed; left:16px; bottom:16px; z-index:60;
+  }
+  .mobile-cta__btn{
+    width:52px; height:52px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 24px -8px rgba(0,0,0,.45);
+    font-size:22px; color:#fff;
+  }
+  .mobile-cta__btn--call{ background:var(--ember); animation:pulse-call 2.2s ease-in-out infinite; }
+  .mobile-cta__btn--zalo{ background:#0068FF; font-family:'Oswald',sans-serif; font-weight:700; font-size:13px; letter-spacing:.02em; }
+}
+@keyframes pulse-call{
+  0%, 100%{ box-shadow:0 10px 24px -8px rgba(0,0,0,.45), 0 0 0 0 rgba(217,83,30,.55); }
+  50%{ box-shadow:0 10px 24px -8px rgba(0,0,0,.45), 0 0 0 10px rgba(217,83,30,0); }
+}
+@media (prefers-reduced-motion: reduce){
+  .mobile-cta__btn--call{ animation:none; }
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width:980px){
   .main-nav{ display:none; }
