@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g1" cx="80%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#C8A24A" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#C8A24A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="10%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#D9531E" stop-opacity=".2"/>
+      <stop offset="100%" stop-color="#D9531E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0E1116"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <text x="80" y="230" font-family="Oswald, sans-serif" font-weight="600" font-size="30" letter-spacing="6" fill="#C8A24A">THUÊ XE KIA CARNIVAL VIP</text>
+  <text x="78" y="320" font-family="Oswald, sans-serif" font-weight="700" font-size="72" fill="#F3EFE6">SANG TRỌNG. AN TOÀN.</text>
+  <text x="78" y="390" font-family="Oswald, sans-serif" font-weight="700" font-size="72" fill="#F3EFE6">ĐÚNG GIỜ.</text>
+  <text x="80" y="460" font-family="Be Vietnam Pro, sans-serif" font-size="24" fill="#9AA3AF">7–8 chỗ · Có tài xế · Hotline 090.6868.764</text>
+  <g transform="translate(760,470)">
+    <rect x="0" y="40" width="360" height="60" rx="10" fill="#1F252E"/>
+    <path d="M20,40 C36,10 70,0 115,0 L262,0 C296,0 322,16 334,40" fill="none" stroke="#C8A24A" stroke-width="2"/>
+    <line x1="0" y1="94" x2="360" y2="94" stroke="#2A313C" stroke-dasharray="4 4"/>
+    <circle cx="80" cy="98" r="18" fill="#1F252E" stroke="#C8A24A" stroke-width="2"/>
+    <circle cx="280" cy="98" r="18" fill="#1F252E" stroke="#C8A24A" stroke-width="2"/>
+  </g>
+</svg>
