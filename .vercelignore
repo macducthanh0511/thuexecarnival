@@ -1,0 +1,4 @@
+# Tài liệu nội bộ: giữ trong Git nhưng không deploy lên website
+*.xlsx
+*.docx
+*.md
