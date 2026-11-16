@@ -4,3 +4,4 @@ Thumbs.db
 hinh xe/
 .claude/
 *.docx
+__pycache__/

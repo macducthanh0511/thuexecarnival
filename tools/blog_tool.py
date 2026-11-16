@@ -30,7 +30,44 @@ ANCHORS = {
 LABELS = {"/doi-xe.html": "Đội xe", "/dich-vu.html": "Tất cả dịch vụ", "/lien-he.html": "Liên hệ đặt xe"}
 
 LANDSCAPE = {"ngoai-that-goc-34-01", "ngoai-that-goc-34-02", "ngoai-that-goc-34-03", "ngoai-that-goc-34-04",
-             "ngoai-that-nghieng-01", "noi-that-ghe-hang2-02", "noi-that-taplo-01"}
+             "ngoai-that-nghieng-01", "noi-that-ghe-hang2-02", "noi-that-ghe-hang2-03", "noi-that-taplo-01"}
+
+# Ảnh xe thật chèn giữa bài (giống tools đã áp cho bài cũ)
+CAP = {
+    "ngoai-that-goc-34-01": "Kia Carnival VIP màu đen, xe được rửa sạch trước mỗi chuyến",
+    "ngoai-that-goc-34-02": "Đầu xe Kia Carnival với lưới tản nhiệt lớn, đèn LED sắc nét",
+    "ngoai-that-goc-34-03": "Góc 3/4 Kia Carnival VIP, phía sau là các toà nhà trung tâm TP.HCM",
+    "ngoai-that-goc-34-04": "Kia Carnival VIP sẵn sàng khởi hành cho chuyến đi trong ngày",
+    "ngoai-that-nghieng-01": "Thân xe dài, cửa trượt hai bên giúp lên xuống dễ dàng",
+    "noi-that-ghe-hang2-01": "Ghế hàng 2 dạng captain seat bọc da cam đất, có bệ đỡ chân",
+    "noi-that-ghe-hang2-02": "Hai ghế thương gia hàng 2 tách rời, ngả lưng thoải mái",
+    "noi-that-ghe-hang2-03": "Lối đi giữa hai ghế hàng 2, ra vào hàng 3 không cần gập ghế",
+    "noi-that-ghe-truoc-01": "Khoang trước bọc da, cửa kính lớn quan sát thoáng",
+    "noi-that-khoang-cabin-01": "Nhìn từ cốp sau: ba hàng ghế, đủ chỗ cho 7-8 người",
+    "noi-that-khoang-cabin-02": "Khoang hành khách nhìn từ hàng ghế 2, nội thất da cam đất",
+    "noi-that-taplo-01": "Khoang lái Kia Carnival nhìn từ ghế tài xế",
+}
+EXT = ["ngoai-that-goc-34-01", "ngoai-that-goc-34-03", "ngoai-that-goc-34-04", "ngoai-that-nghieng-01", "ngoai-that-goc-34-02"]
+INT = ["noi-that-ghe-hang2-01", "noi-that-ghe-hang2-02", "noi-that-ghe-hang2-03", "noi-that-ghe-truoc-01",
+       "noi-that-khoang-cabin-01", "noi-that-khoang-cabin-02", "noi-that-taplo-01"]
+
+
+def gallery_pic(i, sizes, loading="lazy"):
+    w, h = (1276, 956) if i in LANDSCAPE else (956, 1276)
+    return (f'<picture><source type="image/webp" srcset="/images/xe/{i}-480.webp 480w, /images/xe/{i}-800.webp 800w" sizes="{sizes}">'
+            f'<img src="/images/xe/{i}.jpg" alt="{CAP[i]}" width="{w}" height="{h}" loading="{loading}" decoding="async"></picture>')
+
+
+def gallery(slug, hero_img):
+    k = zlib.crc32(slug.encode())
+    ext = [e for e in EXT if e != hero_img]
+    a = ext[k % len(ext)]
+    b = INT[(k // 7) % len(INT)]
+    return ('<div class="post-gallery">\n'
+            f'  <figure>{gallery_pic(a, "(max-width:640px) 100vw, 470px")}<figcaption>{CAP[a]}</figcaption></figure>\n'
+            f'  <figure>{gallery_pic(b, "(max-width:640px) 100vw, 340px")}<figcaption>{CAP[b]}</figcaption></figure>\n'
+            '</div>\n')
+
 
 
 def save(path, text):
@@ -44,11 +81,12 @@ def dmy(d):
     return f"{dd}/{m}/{y}"
 
 
-def picture(p, sizes):
+def picture(p, sizes, loading="lazy"):
     i = p["image"]
+    load = 'loading="eager" fetchpriority="high"' if loading == "eager" else 'loading="lazy"'
     w, h = (1276, 956) if i in LANDSCAPE else (956, 1276)
     return (f'<picture>\n            <source type="image/webp" srcset="/images/xe/{i}-480.webp 480w, /images/xe/{i}-800.webp 800w, /images/xe/{i}-full.webp {w}w" sizes="{sizes}">\n'
-            f'            <img src="/images/xe/{i}.jpg" alt="{p["alt"]}" width="{w}" height="{h}" loading="lazy" decoding="async">\n          </picture>')
+            f'            <img src="/images/xe/{i}.jpg" alt="{p["alt"]}" width="{w}" height="{h}" {load} decoding="async">\n          </picture>')
 
 
 def title_of(slug):
@@ -75,6 +113,15 @@ def related_block(slug, related, services):
       </aside>
       {END}
 """
+
+
+def with_gallery(p):
+    """Chèn cặp ảnh xe thật trước thẻ h2 thứ 3 của thân bài."""
+    body = p["body"].strip()
+    hs = [m.start() for m in re.finditer(r"<h2", body)]
+    if len(hs) < 3:
+        return body
+    return body[:hs[2]] + gallery(p["slug"], p["image"]) + body[hs[2]:]
 
 
 def render(p):
@@ -111,9 +158,9 @@ def render(p):
 <meta property="og:locale" content="vi_VN">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 {ld_html}
 """
@@ -129,9 +176,9 @@ def render(p):
       <div class="post-meta">{p['category']} · {dmy(p['date'])} · {p['read']} phút đọc</div>
       <h1 class="h2" style="margin-top:14px; text-transform:none;">{p['title']}</h1>
       <div class="thumb" style="margin-top:26px; margin-bottom:8px;">
-        {picture(p, "(max-width:640px) 100vw, 760px")}
+        {picture(p, "(max-width:640px) 100vw, 760px", "eager")}
       </div>
-{p['body'].strip()}
+{with_gallery(p)}
 
 <h2>Câu hỏi thường gặp</h2>
 {faq_html}

@@ -4,6 +4,121 @@
    Body:    Be Vietnam Pro (Vietnamese-native humanist sans)
    =========================================================== */
 
+/* Font tự host (Be Vietnam Pro, Oswald) — bộ ký tự tiếng Việt + Latin */
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-400-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-500-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-600-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-600-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-700-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/bevietnampro-700-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/oswald-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/oswald-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/oswald-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/oswald-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/oswald-vietnamese.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/oswald-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
 :root{
   --ink:        #0E1116;
   --ink-2:      #171B22;
@@ -333,15 +448,19 @@ button{ font-family:inherit; cursor:pointer; }
     box-shadow:0 10px 24px -8px rgba(0,0,0,.45);
     font-size:22px; color:#fff;
   }
-  .mobile-cta__btn--call{ background:var(--ember); animation:pulse-call 2.2s ease-in-out infinite; }
+  .mobile-cta__btn--call{ background:var(--ember); position:relative; }
+  .mobile-cta__btn--call::after{
+    content:""; position:absolute; inset:0; border-radius:50%; border:2px solid var(--ember);
+    animation:pulse-call 2.2s ease-out infinite; pointer-events:none;
+  }
   .mobile-cta__btn--zalo{ background:#0068FF; font-family:'Oswald',sans-serif; font-weight:700; font-size:13px; letter-spacing:.02em; }
 }
 @keyframes pulse-call{
-  0%, 100%{ box-shadow:0 10px 24px -8px rgba(0,0,0,.45), 0 0 0 0 rgba(217,83,30,.55); }
-  50%{ box-shadow:0 10px 24px -8px rgba(0,0,0,.45), 0 0 0 10px rgba(217,83,30,0); }
+  0%{ transform:scale(1); opacity:.8; }
+  70%, 100%{ transform:scale(1.45); opacity:0; }
 }
 @media (prefers-reduced-motion: reduce){
-  .mobile-cta__btn--call{ animation:none; }
+  .mobile-cta__btn--call::after{ animation:none; display:none; }
 }
 
 /* ---------- Responsive ---------- */
@@ -381,3 +500,106 @@ button{ font-family:inherit; cursor:pointer; }
 .related-guide:hover{ border-color:var(--gold); transform:translateY(-2px); }
 @media (max-width:980px){ .related-guides__grid{ grid-template-columns:1fr 1fr; } }
 @media (max-width:640px){ .related-guides__grid{ grid-template-columns:1fr; } .related-posts{ padding:20px 18px; } }
+
+/* ===========================================================
+   Motion — cuộn trang có chiều sâu
+   Chỉ bật khi JS thêm class .js-motion và người dùng không tắt chuyển động
+   =========================================================== */
+.scroll-progress{
+  position:fixed; top:0; left:0; right:0; height:3px; z-index:120; pointer-events:none;
+  background:linear-gradient(90deg,var(--ember),var(--gold-bright));
+  transform:scaleX(0); transform-origin:0 50%;
+}
+@supports (animation-timeline: scroll()){
+  .scroll-progress{ animation:progress-grow linear both; animation-timeline:scroll(root); }
+}
+@keyframes progress-grow{ to{ transform:scaleX(1); } }
+
+.js-motion [data-reveal]{
+  opacity:0; transform:translate3d(0,42px,0);
+  transition:opacity .85s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1);
+  transition-delay:var(--d,0s);
+}
+.js-motion [data-reveal="left"]{ transform:translate3d(-40px,0,0); }
+.js-motion [data-reveal="photo"]{
+  opacity:1; transform:none;
+  clip-path:inset(14% 8% 14% 8%);
+  transition:clip-path 1.2s cubic-bezier(.2,.7,.2,1);
+  transition-delay:var(--d,0s);
+}
+.js-motion [data-reveal].is-in{ opacity:1; transform:none; }
+.js-motion [data-reveal="photo"].is-in{ clip-path:inset(0 0 0 0); }
+
+.js-motion .photo-frame picture{ display:block; height:100%; will-change:transform; }
+.js-motion .photo-frame img{ transform:scale(1.14); transition:transform 1.6s cubic-bezier(.2,.7,.2,1); }
+.js-motion .photo-frame[data-reveal="photo"]:not(.is-in) img{ transform:scale(1.32); }
+.js-motion .post-gallery img{ transform:scale(1.18); transition:transform 1.6s cubic-bezier(.2,.7,.2,1); }
+.js-motion .post-gallery figure.is-in img{ transform:scale(1); }
+
+/* Banner đầu trang: chữ trượt vào, không làm mờ để không trễ LCP */
+.js-motion .hero-copy > *{ animation:hero-rise .9s cubic-bezier(.2,.7,.2,1) both; }
+.js-motion .hero-copy > :nth-child(2){ animation-delay:.08s; }
+.js-motion .hero-copy > :nth-child(3){ animation-delay:.16s; }
+.js-motion .hero-copy > :nth-child(4){ animation-delay:.24s; }
+.js-motion .hero-copy > :nth-child(5){ animation-delay:.32s; }
+@keyframes hero-rise{ from{ transform:translate3d(0,28px,0); } to{ transform:none; } }
+.hero .gauge-card{ transition:transform .4s cubic-bezier(.2,.7,.2,1); transform-style:preserve-3d; }
+
+/* Thẻ giá nổi khối khi rê chuột */
+@media (hover:hover) and (pointer:fine){
+  .js-motion .price-card{ transition:transform .35s ease, box-shadow .35s ease, opacity .85s, border-color .2s; }
+  .js-motion .price-card.is-in:hover{ transform:translate3d(0,-8px,0); box-shadow:0 30px 60px -30px rgba(14,17,22,.55); }
+}
+
+/* ===== Showcase cuộn ngang (trang chủ) ===== */
+.showcase{ background:var(--ink); color:var(--paper); position:relative; }
+.showcase__sticky{ overflow:hidden; padding-block:72px 64px; position:relative; }
+.showcase__head{ position:relative; z-index:2; display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap; margin-bottom:36px; }
+.showcase__head .lede{ max-width:44ch; color:#C7C1B4; }
+.showcase__ghost{
+  position:absolute; left:0; bottom:6%; z-index:0; white-space:nowrap; pointer-events:none;
+  font-family:'Oswald',sans-serif; font-weight:700; font-size:clamp(6rem,18vw,15rem); line-height:1;
+  color:transparent; -webkit-text-stroke:1px rgba(200,162,74,.22); letter-spacing:.02em;
+}
+.showcase__track{
+  position:relative; z-index:1; display:flex; gap:28px;
+  padding-inline:max(16px, calc((100vw - var(--container)) / 2 + 24px));
+  overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; -webkit-overflow-scrolling:touch;
+}
+.showcase__track::-webkit-scrollbar{ display:none; }
+.showcase__item{
+  margin:0; flex:0 0 auto; width:min(78vw, 560px); scroll-snap-align:center;
+  transform:scale(calc(1 - var(--depth,0) * .1)); opacity:calc(1 - var(--depth,0) * .35);
+  transition:transform .15s linear, opacity .15s linear;
+}
+.showcase__item--tall{ width:min(62vw, 380px); }
+.showcase__media{ position:relative; overflow:hidden; border:1px solid var(--line-dark); aspect-ratio:4/3; background:var(--ink-3); }
+.showcase__item--tall .showcase__media{ aspect-ratio:3/4; }
+.showcase__media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.showcase__item figcaption{ margin-top:14px; font-size:14px; color:#C7C1B4; line-height:1.6; max-width:52ch; }
+.showcase__item figcaption b{ display:block; font-family:'Oswald',sans-serif; font-weight:600; font-size:17px; color:var(--paper); letter-spacing:.03em; text-transform:uppercase; margin-bottom:4px; }
+.showcase__item figcaption b span{ color:var(--gold-bright); margin-right:8px; }
+.showcase.is-pinned .showcase__sticky{ position:sticky; top:0; height:100vh; display:flex; flex-direction:column; justify-content:center; padding-block:20px; }
+.showcase.is-pinned .showcase__head{ margin-bottom:22px; }
+.showcase.is-pinned .showcase__track{ overflow:visible; scroll-snap-type:none; will-change:transform; }
+.showcase.is-pinned .showcase__item{ width:min(46vw, 620px); }
+.showcase.is-pinned .showcase__item--tall{ width:min(28vw, 400px); }
+.showcase.is-pinned .showcase__media{ height:min(50vh, 500px); aspect-ratio:auto; }
+
+/* ===== Ảnh minh họa trong bài blog ===== */
+.post-gallery{ display:grid; grid-template-columns:1.35fr 1fr; gap:14px; margin:34px 0 30px; }
+.post-gallery figure{ margin:0; overflow:hidden; position:relative; background:var(--ink-3); }
+.post-gallery img{ width:100%; height:100%; object-fit:cover; display:block; aspect-ratio:4/3; }
+.post-gallery figure + figure img{ position:absolute; inset:0; aspect-ratio:auto; }
+.post-gallery figcaption{
+  position:absolute; left:0; right:0; bottom:0; padding:28px 14px 10px; font-size:12.5px; line-height:1.45; color:#F3EFE6;
+  background:linear-gradient(to top, rgba(14,17,22,.85), rgba(14,17,22,0));
+}
+@media (max-width:640px){
+  .post-gallery{ grid-template-columns:1fr; }
+  .post-gallery figure + figure img{ position:static; aspect-ratio:4/3; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .scroll-progress{ display:none; }
+}

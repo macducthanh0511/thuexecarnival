@@ -23,9 +23,9 @@
 <meta property="og:locale" content="vi_VN">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -108,7 +108,7 @@
       <div class="thumb" style="margin-top:26px; margin-bottom:8px;">
         <picture>
           <source type="image/webp" srcset="/images/xe/ngoai-that-goc-34-03-480.webp 480w, /images/xe/ngoai-that-goc-34-03-800.webp 800w, /images/xe/ngoai-that-goc-34-03-full.webp 1276w" sizes="(max-width:640px) 100vw, 760px">
-          <img src="/images/xe/ngoai-that-goc-34-03.jpg" alt="Xe Kia Carnival VIP góc 3/4 trước trên hành trình đi Đà Lạt, phía sau là skyline Bitexco" width="1276" height="956" loading="lazy" decoding="async">
+          <img src="/images/xe/ngoai-that-goc-34-03.jpg" alt="Xe Kia Carnival VIP góc 3/4 trước trên hành trình đi Đà Lạt, phía sau là skyline Bitexco" width="1276" height="956" loading="eager" fetchpriority="high" decoding="async">
         </picture>
       </div>
 
@@ -119,6 +119,10 @@
 
       <h2>Lộ trình phổ biến từ TP.HCM đi Đà Lạt</h2>
       <p>Cung đường quen thuộc nhất là TP.HCM → Dầu Giây → Quốc lộ 20 → Bảo Lộc → Di Linh → Đà Lạt, tổng quãng đường khoảng 300–310km. Nhiều đoàn chọn xuất phát sớm (5h–6h sáng) để tránh nắng nóng buổi trưa và có thời gian dừng chân ngắm cảnh dọc đường mà vẫn tới nơi trước tối. Một số đoàn thích trải nghiệm chậm hơn sẽ tách chuyến đi thành 2 ngày, nghỉ đêm tại Bảo Lộc để tham quan thác Đambri trước khi tiếp tục lên Đà Lạt.</p>
+<div class="post-gallery">
+  <figure><picture><source type="image/webp" srcset="/images/xe/ngoai-that-nghieng-01-480.webp 480w, /images/xe/ngoai-that-nghieng-01-800.webp 800w" sizes="(max-width:640px) 100vw, 470px"><img src="/images/xe/ngoai-that-nghieng-01.jpg" alt="Thân xe dài, cửa trượt hai bên giúp lên xuống dễ dàng" width="1276" height="956" loading="lazy" decoding="async"></picture><figcaption>Thân xe dài, cửa trượt hai bên giúp lên xuống dễ dàng</figcaption></figure>
+  <figure><picture><source type="image/webp" srcset="/images/xe/noi-that-ghe-hang2-01-480.webp 480w, /images/xe/noi-that-ghe-hang2-01-800.webp 800w" sizes="(max-width:640px) 100vw, 340px"><img src="/images/xe/noi-that-ghe-hang2-01.jpg" alt="Ghế hàng 2 dạng captain seat bọc da cam đất, có bệ đỡ chân" width="956" height="1276" loading="lazy" decoding="async"></picture><figcaption>Ghế hàng 2 dạng captain seat bọc da cam đất, có bệ đỡ chân</figcaption></figure>
+</div>
 
       <h2>Nên thuê xe theo ngày hay theo chuyến?</h2>
       <p>Đây là câu hỏi phổ biến nhất của khách hàng. Nếu bạn muốn một chuyến đi trọn vẹn có tài xế đồng hành suốt hành trình, <a href="/thue-xe-carnival-di-da-lat.html">gói trọn 3 ngày 2 đêm</a> là lựa chọn tối ưu vì chi phí được tính trọn gói cố định, dễ dự trù ngân sách. Ngược lại, nếu bạn chỉ cần xe đưa đi/đón về còn lại tự chủ động lịch trình tại Đà Lạt, có thể chọn dịch vụ đưa/đón riêng 1 chiều, hoặc nếu kế hoạch bao gồm di chuyển nhiều điểm tham quan trong nội ô (thác, đồi chè, nông trại, các quán cà phê xa trung tâm), <a href="/thue-xe-theo-ngay.html">thuê xe Kia Carnival theo ngày</a> tại chỗ sẽ linh hoạt hơn nhiều, vì bạn chủ động được giờ giấc và lịch trình mà không phải phụ thuộc vào phương tiện công cộng hay taxi lẻ.</p>
@@ -202,7 +206,7 @@
       <div class="footer-col">
         <h5>Liên hệ</h5>
         <ul>
-          <li>182 Trần Văn Dư, P. Tân Bình, TP.HCM</li>
+          <li>2B Bàu Bàng, P. Tân Bình, TP.HCM</li>
           <li><a href="tel:0906868764">090.6868.764</a></li>
           <li><a href="mailto:lienhe@thuexekiacarnival.vn">lienhe@thuexekiacarnival.vn</a></li>
         </ul>

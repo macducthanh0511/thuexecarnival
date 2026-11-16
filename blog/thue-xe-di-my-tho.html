@@ -23,9 +23,9 @@
 <meta property="og:locale" content="vi_VN">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -168,7 +168,7 @@
       <div class="thumb" style="margin-top:26px; margin-bottom:8px;">
         <picture>
             <source type="image/webp" srcset="/images/xe/ngoai-that-goc-34-02-480.webp 480w, /images/xe/ngoai-that-goc-34-02-800.webp 800w, /images/xe/ngoai-that-goc-34-02-full.webp 1276w" sizes="(max-width:640px) 100vw, 760px">
-            <img src="/images/xe/ngoai-that-goc-34-02.jpg" alt="Xe Kia Carnival VIP đưa gia đình đi Mỹ Tho tham quan trong ngày" width="1276" height="956" loading="lazy" decoding="async">
+            <img src="/images/xe/ngoai-that-goc-34-02.jpg" alt="Xe Kia Carnival VIP đưa gia đình đi Mỹ Tho tham quan trong ngày" width="1276" height="956" loading="eager" fetchpriority="high" decoding="async">
           </picture>
       </div>
 <p>Mỹ Tho là cửa ngõ miền Tây gần TP.HCM nhất: chỉ khoảng 70km, chưa tới 2 giờ chạy xe, nhưng đã đủ chất sông nước với cù lao, vườn trái cây, đờn ca tài tử và tô hủ tiếu nổi tiếng. Đây là chuyến đi trong ngày lý tưởng cho gia đình có người lớn tuổi. Bài viết chia sẻ kinh nghiệm <strong>thuê xe đi Mỹ Tho</strong> bằng xe 7 chỗ có tài xế.</p>
@@ -185,6 +185,10 @@
 <li><strong>14h30:</strong> mua đặc sản, khởi hành về, tới TP.HCM khoảng 16h30-17h.</li>
 </ul>
 <p>Còn thời gian? Qua cầu Rạch Miễu là Bến Tre xứ dừa — xem <a href="/blog/kinh-nghiem-thue-xe-di-ben-tre.html">kinh nghiệm đi Bến Tre</a>, hoặc đi tiếp <a href="/blog/kinh-nghiem-thue-xe-di-vinh-long.html">Vĩnh Long</a> nếu ở lại qua đêm.</p>
+<div class="post-gallery">
+  <figure><picture><source type="image/webp" srcset="/images/xe/ngoai-that-goc-34-04-480.webp 480w, /images/xe/ngoai-that-goc-34-04-800.webp 800w" sizes="(max-width:640px) 100vw, 470px"><img src="/images/xe/ngoai-that-goc-34-04.jpg" alt="Kia Carnival VIP sẵn sàng khởi hành cho chuyến đi trong ngày" width="1276" height="956" loading="lazy" decoding="async"></picture><figcaption>Kia Carnival VIP sẵn sàng khởi hành cho chuyến đi trong ngày</figcaption></figure>
+  <figure><picture><source type="image/webp" srcset="/images/xe/noi-that-ghe-hang2-02-480.webp 480w, /images/xe/noi-that-ghe-hang2-02-800.webp 800w" sizes="(max-width:640px) 100vw, 340px"><img src="/images/xe/noi-that-ghe-hang2-02.jpg" alt="Hai ghế thương gia hàng 2 tách rời, ngả lưng thoải mái" width="1276" height="956" loading="lazy" decoding="async"></picture><figcaption>Hai ghế thương gia hàng 2 tách rời, ngả lưng thoải mái</figcaption></figure>
+</div>
 
 <h2>Chi phí thuê xe</h2>
 <p>Khứ hồi Mỹ Tho khoảng 140-160km cộng di chuyển giữa các điểm. Có thể dùng gói <a href="/thue-xe-theo-ngay.html">thuê xe theo ngày</a> 10 giờ/100km giá 2.500.000đ cộng phần vượt km 10.000đ/km — ví dụ đi 150km: 2.500.000đ + 50 × 10.000đ = 3.000.000đ, chia đoàn 7 người khoảng 430.000đ/người. Tuyến lân cận TP.HCM - Bến Tre có giá khứ hồi trong ngày 4.800.000đ. Xem tổng hợp các tuyến tại trang <a href="/thue-xe-7-cho-di-mien-tay.html">thuê xe 7 chỗ đi miền Tây</a>; cách tính phụ phí xem <a href="/blog/cach-tinh-phi-phat-sinh-thue-xe-co-tai-xe.html">tại đây</a>.</p>
@@ -269,7 +273,7 @@
       <div class="footer-col">
         <h5>Liên hệ</h5>
         <ul>
-          <li>182 Trần Văn Dư, P. Tân Bình, TP.HCM</li>
+          <li>2B Bàu Bàng, P. Tân Bình, TP.HCM</li>
           <li><a href="tel:0906868764">090.6868.764</a></li>
           <li><a href="mailto:lienhe@thuexekiacarnival.vn">lienhe@thuexekiacarnival.vn</a></li>
         </ul>
