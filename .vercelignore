@@ -2,3 +2,6 @@
 *.xlsx
 *.docx
 *.md
+
+# Công cụ sinh bài, không phải nội dung website
+tools/
