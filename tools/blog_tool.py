@@ -26,6 +26,7 @@ ANCHORS = {
     "/thue-xe-carnival-di-can-tho.html": ["Thuê xe 7 chỗ đi Cần Thơ", "Thuê xe đi Cần Thơ có tài xế", "Xe Carnival đi Cần Thơ"],
     "/thue-xe-7-cho-di-mien-tay.html": ["Thuê xe 7 chỗ đi miền Tây", "Bảng giá thuê xe đi miền Tây", "Thuê xe đi các tỉnh miền Tây"],
     "/bang-gia.html": ["Bảng giá thuê xe 7 chỗ", "Giá thuê xe Carnival", "Bảng giá thuê xe mới nhất"],
+    "/bang-gia-thue-xe-carnival-di-tinh.html": ["Bảng giá thuê xe Carnival đi tỉnh", "Giá thuê xe Carnival đi tỉnh 2026", "Giá thuê xe 7 chỗ đi tỉnh"],
 }
 LABELS = {"/doi-xe.html": "Đội xe", "/dich-vu.html": "Tất cả dịch vụ", "/lien-he.html": "Liên hệ đặt xe"}
 

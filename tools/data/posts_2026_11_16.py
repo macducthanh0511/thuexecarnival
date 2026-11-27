@@ -32,7 +32,7 @@ body="""
 <div class="table-scroll"><table class="rate-table">
 <thead><tr><th>Khoản</th><th>Ngày thường</th></tr></thead>
 <tbody>
-<tr><td>Kia Carnival tự lái</td><td>2.000.000đ / ngày</td></tr>
+<tr><td>Kia Carnival tự lái</td><td>1.800.000đ / ngày</td></tr>
 <tr><td>Định mức</td><td>300km / ngày</td></tr>
 <tr><td>Đặt cọc</td><td>15.000.000đ hoặc thế chấp xe máy/sổ đỏ</td></tr>
 <tr><td>Giấy tờ</td><td>CCCD + GPLX hạng B trở lên, bản gốc</td></tr>
@@ -86,7 +86,7 @@ body="""
 <p>Ba điểm này cách nhau vài km, đi trong khoảng 4-5 giờ là vừa — phù hợp gói <a href="/thue-xe-theo-gio.html">thuê xe theo giờ</a> 5 giờ 2.000.000đ cho block 5 giờ, đã gồm tài xế và dầu. Tài xế thả cả nhà sát cổng chùa rồi chờ ở điểm đỗ được phép, gọi là có xe ngay.</p>
 
 <h2>Lịch trình cả ngày: chùa + đường hoa</h2>
-<p>Sáng đi chùa, trưa ăn uống, chiều dạo đường hoa Nguyễn Huệ và đường sách. Khu trung tâm ngày Tết cấm xe nhiều tuyến, nên tài xế sẽ thả và đón ở các điểm được phép quanh khu vực. Dùng gói <a href="/thue-xe-theo-ngay.html">thuê xe 7 chỗ theo ngày</a> 2.300.000đ (8 giờ/80km) để thong thả. Gợi ý thêm các điểm tham quan tại bài <a href="/blog/thue-xe-carnival-city-tour-sai-gon.html">city tour Sài Gòn 1 ngày</a>.</p>
+<p>Sáng đi chùa, trưa ăn uống, chiều dạo đường hoa Nguyễn Huệ và đường sách. Khu trung tâm ngày Tết cấm xe nhiều tuyến, nên tài xế sẽ thả và đón ở các điểm được phép quanh khu vực. Dùng gói <a href="/thue-xe-theo-ngay.html">thuê xe 7 chỗ theo ngày</a> 2.500.000đ (10 giờ/100km) để thong thả. Gợi ý thêm các điểm tham quan tại bài <a href="/blog/thue-xe-carnival-city-tour-sai-gon.html">city tour Sài Gòn 1 ngày</a>.</p>
 
 <h2>Du xuân xa hơn: Núi Bà Đen, Bà Chúa Xứ</h2>
 <ul>
