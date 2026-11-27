@@ -24,7 +24,7 @@ SELF_DRIVE_CARDS = [
     ("/lien-he.html", "🚚", "Giao Nhận Xe", "Tận nơi hoặc tại<br>2B Bàu Bàng"),
 ]
 DRIVER_CARDS = [
-    ("/thue-xe-theo-gio.html", "⏱️", "Theo Giờ", "450.000đ<br>tối thiểu 4h/40km"),
+    ("/thue-xe-theo-gio.html", "⏱️", "Theo Giờ", "2.000.000đ<br>block 5 giờ, gồm dầu"),
     ("/thue-xe-theo-ngay.html", "📅", "Theo Ngày", "2.500.000đ<br>10h/100km"),
     ("/thue-xe-dai-han.html", "🗓️", "Dài Hạn", "60.000.000đ<br>/tháng"),
     ("/thue-xe-tu-lai.html", "🔑", "Tự Lái", "1.800.000đ<br>/ngày, 300km"),
@@ -81,6 +81,7 @@ def render(p):
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 {ld_html}
 """

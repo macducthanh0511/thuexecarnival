@@ -5,7 +5,7 @@
 Giá đã gồm tài xế, nhiên liệu trong định mức và bảo hiểm (với gói có tài xế). Giá áp dụng thống nhất toàn TP.HCM.
 
 ## Bảng giá chính
-- Theo giờ: 450.000đ cho 4 giờ/40km đầu; vượt giờ 90.000đ/giờ, vượt km 12.000đ/km
+- Theo giờ: block 5 giờ 2.000.000đ, đã gồm tài xế và dầu (cần hơn 5 giờ dùng gói ngày)
 - Theo ngày: 2.500.000đ (10 giờ/100km); vượt giờ 100.000đ/giờ, vượt km 10.000đ/km
 - Theo tháng: 60.000.000đ/tháng, tối thiểu 3 tháng, 2.500km/tháng, tài xế cố định
 - Tự lái: 1.800.000đ/ngày, 300km/ngày, đặt cọc 15.000.000đ hoặc thế chấp xe máy/sổ đỏ, cần CCCD và GPLX hạng B

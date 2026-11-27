@@ -2,13 +2,18 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -62,7 +68,7 @@
       "name": "Thuê xe đi chùa đầu năm nên chọn gói nào?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Đi 2-3 chùa nội thành trong 4-5 giờ nên chọn gói theo giờ 450.000đ cho 4 giờ đầu; đi cả ngày kết hợp đường hoa nên chọn gói ngày 2.500.000đ."
+        "text": "Đi 2-3 chùa nội thành trong 4-5 giờ nên chọn gói theo giờ 2.000.000đ cho block 5 giờ; đi cả ngày kết hợp đường hoa nên chọn gói ngày 2.500.000đ."
       }
     },
     {
@@ -179,7 +185,7 @@
 <li><strong>Chùa Ngọc Hoàng (Đa Kao):</strong> nổi tiếng cầu duyên, cầu tự.</li>
 <li><strong>Chùa Bà Thiên Hậu (Chợ Lớn):</strong> hội quán người Hoa cổ kính, khói nhang trầm mặc ngày Tết.</li>
 </ul>
-<p>Ba điểm này cách nhau vài km, đi trong khoảng 4-5 giờ là vừa — phù hợp gói <a href="/thue-xe-theo-gio.html">thuê xe theo giờ</a> 450.000đ cho 4 giờ đầu, vượt giờ 90.000đ/giờ. Tài xế thả cả nhà sát cổng chùa rồi chờ ở điểm đỗ được phép, gọi là có xe ngay.</p>
+<p>Ba điểm này cách nhau vài km, đi trong khoảng 4-5 giờ là vừa — phù hợp gói <a href="/thue-xe-theo-gio.html">thuê xe theo giờ</a> 5 giờ 2.000.000đ cho block 5 giờ, đã gồm tài xế và dầu. Tài xế thả cả nhà sát cổng chùa rồi chờ ở điểm đỗ được phép, gọi là có xe ngay.</p>
 
 <h2>Lịch trình cả ngày: chùa + đường hoa</h2>
 <p>Sáng đi chùa, trưa ăn uống, chiều dạo đường hoa Nguyễn Huệ và đường sách. Khu trung tâm ngày Tết cấm xe nhiều tuyến, nên tài xế sẽ thả và đón ở các điểm được phép quanh khu vực. Dùng gói <a href="/thue-xe-theo-ngay.html">thuê xe 7 chỗ theo ngày</a> 2.500.000đ (10 giờ/100km) để thong thả. Gợi ý thêm các điểm tham quan tại bài <a href="/blog/thue-xe-carnival-city-tour-sai-gon.html">city tour Sài Gòn 1 ngày</a>.</p>
@@ -205,7 +211,7 @@
 
 <h2>Câu hỏi thường gặp</h2>
 <h3>Thuê xe đi chùa đầu năm nên chọn gói nào?</h3>
-<p>Đi 2-3 chùa nội thành trong 4-5 giờ nên chọn gói theo giờ 450.000đ cho 4 giờ đầu; đi cả ngày kết hợp đường hoa nên chọn gói ngày 2.500.000đ.</p>
+<p>Đi 2-3 chùa nội thành trong 4-5 giờ nên chọn gói theo giờ 2.000.000đ cho block 5 giờ; đi cả ngày kết hợp đường hoa nên chọn gói ngày 2.500.000đ.</p>
 <h3>Mùng 1 Tết có thuê được xe có tài xế không?</h3>
 <p>Có, nhưng xe kín lịch rất sớm; nên đặt từ tháng 12 và xác nhận giá dịp Tết bằng tin nhắn.</p>
 <h3>Đi Núi Bà Đen dịp Tết có đi về trong ngày được không?</h3>
@@ -295,6 +301,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

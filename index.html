@@ -2,18 +2,23 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thuê Xe Carnival TP.HCM – Có Tài Xế &amp; Tự Lái | Từ 450K</title>
-<meta name="description" content="Cho thuê xe Kia Carnival 7-8 chỗ tại TP.HCM: có tài xế từ 450K/4 giờ, theo ngày 2.500.000đ, tự lái 1.800.000đ/ngày. Gọi 090.6868.764.">
+<title>Thuê Xe Carnival TP.HCM – Có Tài Xế &amp; Tự Lái 24/7</title>
+<meta name="description" content="Cho thuê xe Kia Carnival 7-8 chỗ tại TP.HCM: có tài xế 2.000.000đ/5 giờ, theo ngày 2.500.000đ/10 giờ, tự lái 1.800.000đ/ngày. Gọi 090.6868.764.">
 <link rel="canonical" href="https://www.thuexekiacarnival.vn/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Thuê Xe Carnival TP.HCM – Có Tài Xế &amp; Tự Lái">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <link rel="preload" as="image" imagesrcset="/images/xe/ngoai-that-goc-34-01-480.webp 480w, /images/xe/ngoai-that-goc-34-01-800.webp 800w, /images/xe/ngoai-that-goc-34-01-full.webp 1276w" imagesizes="(max-width:980px) 100vw, 50vw" fetchpriority="high">
 <script type="application/ld+json">
@@ -41,7 +47,7 @@
   "image": "https://www.thuexekiacarnival.vn/images/xe/ngoai-that-goc-34-02.jpg",
   "url": "https://www.thuexekiacarnival.vn/",
   "telephone": "+84906868764",
-  "priceRange": "450.000đ - 60.000.000đ",
+  "priceRange": "1.000.000đ - 60.000.000đ",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "2B Bàu Bàng",
@@ -265,9 +271,9 @@
     <div class="price-table">
       <div class="price-card">
         <div class="price-name">Theo Giờ</div>
-        <div class="price-value">450.000đ<span> /4h đầu</span></div>
+        <div class="price-value">2.000.000đ<span> /5 giờ</span></div>
         <ul class="price-list">
-          <li>Tối thiểu 4 giờ, 40km</li>
+          <li>Block 5 giờ, đã gồm tài xế và dầu</li>
           <li>Phù hợp công tác trong ngày</li>
           <li>Tài xế riêng, xe đời mới</li>
         </ul>
@@ -555,6 +561,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

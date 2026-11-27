@@ -2,13 +2,18 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -62,7 +68,7 @@
       "name": "Thuê xe 7 chỗ có tài xế tại TP.HCM giá bao nhiêu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Xe Kia Carnival VIP theo giờ từ 450.000đ cho 4 giờ/40km, theo ngày từ 2.500.000đ cho 10 giờ/100km, đã gồm tài xế, nhiên liệu trong định mức và bảo hiểm."
+        "text": "Xe Kia Carnival VIP theo giờ 2.000.000đ cho block 5 giờ, theo ngày từ 2.500.000đ cho 10 giờ/100km, đã gồm tài xế, nhiên liệu trong định mức và bảo hiểm."
       }
     },
     {
@@ -177,7 +183,7 @@
 <h3>1. Giá đã gồm những gì?</h3>
 <p>Hỏi rõ: tài xế, nhiên liệu, bảo hiểm, phí cầu đường, bến bãi. Ví dụ dịch vụ <a href="/">thuê xe 7 chỗ có tài xế TP.HCM</a> của chúng tôi đã gồm tài xế, nhiên liệu trong định mức và bảo hiểm.</p>
 <h3>2. Định mức giờ và km là bao nhiêu?</h3>
-<p>Gói giờ 450.000đ gồm 4 giờ/40km; gói ngày 2.500.000đ gồm 10 giờ/100km. Biết định mức giúp bạn chọn đúng gói ngay từ đầu.</p>
+<p>Gói giờ 2.000.000đ gồm block 5 giờ, đã có tài xế và dầu; gói ngày 2.500.000đ gồm 10 giờ/100km. Biết định mức giúp bạn chọn đúng gói ngay từ đầu.</p>
 <h3>3. Vượt giờ, vượt km tính thế nào?</h3>
 <p>Xem ví dụ cụ thể trong bài <a href="/blog/cach-tinh-phi-phat-sinh-thue-xe-co-tai-xe.html">cách tính phí phát sinh khi thuê xe có tài xế</a>.</p>
 <h3>4. Đi tỉnh có giá theo tuyến không?</h3>
@@ -209,7 +215,7 @@
 
 <h2>Câu hỏi thường gặp</h2>
 <h3>Thuê xe 7 chỗ có tài xế tại TP.HCM giá bao nhiêu?</h3>
-<p>Xe Kia Carnival VIP theo giờ từ 450.000đ cho 4 giờ/40km, theo ngày từ 2.500.000đ cho 10 giờ/100km, đã gồm tài xế, nhiên liệu trong định mức và bảo hiểm.</p>
+<p>Xe Kia Carnival VIP theo giờ 2.000.000đ cho block 5 giờ, theo ngày từ 2.500.000đ cho 10 giờ/100km, đã gồm tài xế, nhiên liệu trong định mức và bảo hiểm.</p>
 <h3>Cần hỏi gì trước khi thuê xe có tài xế?</h3>
 <p>Hỏi giá gồm những gì, định mức giờ và km, cách tính vượt giờ vượt km, đời xe, số chỗ và hành lý, tài xế có quen tuyến không, hợp đồng, đặt cọc, chính sách hủy và hóa đơn.</p>
 <h3>Đi tỉnh nên chọn gói ngày hay giá tuyến?</h3>
@@ -299,6 +305,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

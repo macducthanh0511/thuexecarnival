@@ -2,13 +2,18 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -70,7 +76,7 @@
       "name": "City tour Sài Gòn nửa ngày nên thuê gói nào?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nên chọn gói theo giờ, 450.000đ cho 4 giờ đầu, vượt giờ 90.000đ/giờ, phù hợp tham quan 2-3 điểm."
+        "text": "Nên chọn gói theo giờ, block 5 giờ 2.000.000đ, đã gồm tài xế và dầu, phù hợp tham quan 2-3 điểm."
       }
     },
     {
@@ -178,7 +184,7 @@
 <div class="table-scroll"><table class="rate-table">
 <thead><tr><th>Gói</th><th>Giá</th><th>Phù hợp</th></tr></thead>
 <tbody>
-<tr><td>Theo giờ (4 giờ đầu)</td><td>450.000đ</td><td>Tour nửa ngày, 2-3 điểm</td></tr>
+<tr><td>Theo giờ (block 5 giờ)</td><td>2.000.000đ</td><td>Tour nửa ngày, 2-3 điểm</td></tr>
 <tr><td>Theo ngày 10 giờ/100km</td><td>2.500.000đ</td><td>City tour cả ngày</td></tr>
 <tr><td>Theo ngày 10 giờ/100km</td><td>2.500.000đ</td><td>Tour kèm Củ Chi hoặc ăn tối</td></tr>
 </tbody></table></div>
@@ -217,7 +223,7 @@
 <h3>Thuê xe city tour Sài Gòn 1 ngày giá bao nhiêu?</h3>
 <p>Gói thuê xe Kia Carnival có tài xế theo ngày giá 2.500.000đ cho 10 giờ/100km.</p>
 <h3>City tour Sài Gòn nửa ngày nên thuê gói nào?</h3>
-<p>Nên chọn gói theo giờ, 450.000đ cho 4 giờ đầu, vượt giờ 90.000đ/giờ, phù hợp tham quan 2-3 điểm.</p>
+<p>Nên chọn gói theo giờ, block 5 giờ 2.000.000đ, đã gồm tài xế và dầu, phù hợp tham quan 2-3 điểm.</p>
 <h3>Có thể kết hợp đón sân bay và city tour không?</h3>
 <p>Có. Bạn có thể ghép chặng đón sân bay Tân Sơn Nhất vào đầu tour để tiết kiệm chi phí và thời gian.</p>
 
@@ -306,6 +312,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

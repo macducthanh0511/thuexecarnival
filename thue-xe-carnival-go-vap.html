@@ -2,18 +2,23 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thuê Xe 7 Chỗ Kia Carnival VIP Tại Gò Vấp | Điều Xe Nhanh</title>
-<meta name="description" content="Thuê xe 7 chỗ Kia Carnival có tài xế tại Gò Vấp: sát trụ sở Tân Bình nên điều xe nhanh, đưa đón sân bay, đi tỉnh, đi khám bệnh. Từ 450.000đ.">
+<meta name="description" content="Thuê xe 7 chỗ Kia Carnival có tài xế tại Gò Vấp: sát trụ sở Tân Bình nên điều xe nhanh, đưa đón sân bay, đi tỉnh, đi khám bệnh. Theo giờ 2 triệu/5 giờ.">
 <link rel="canonical" href="https://www.thuexekiacarnival.vn/thue-xe-carnival-go-vap.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Thuê Xe 7 Chỗ Kia Carnival VIP Tại Gò Vấp">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -49,9 +55,9 @@
   "offers": [
     {
       "@type": "Offer",
-      "price": "450000",
+      "price": "2000000",
       "priceCurrency": "VND",
-      "description": "Thuê theo giờ từ 450.000đ, tối thiểu 4 giờ/40km"
+      "description": "Thuê theo giờ block 5 giờ 2.000.000đ, gồm tài xế và dầu"
     },
     {
       "@type": "Offer",
@@ -88,7 +94,7 @@
       "name": "Có thuê xe theo giờ để đưa người nhà đi khám bệnh được không?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Được. Gói theo giờ 450.000đ cho 4 giờ đầu, vượt giờ 90.000đ/giờ, xe chờ tại bệnh viện suốt buổi khám."
+        "text": "Được. Gói theo giờ block 5 giờ 2.000.000đ, đã gồm tài xế và dầu, xe chờ tại bệnh viện suốt buổi khám."
       }
     }
   ]
@@ -202,7 +208,7 @@
       <a href="/thue-xe-theo-gio.html" class="card">
         <div class="card-icon">⏱️</div>
         <h3>Theo Giờ</h3>
-        <p>450.000đ<br>tối thiểu 4h/40km</p>
+        <p>2.000.000đ<br>block 5 giờ, gồm dầu</p>
       </a>
       <a href="/thue-xe-theo-ngay.html" class="card">
         <div class="card-icon">📅</div>
@@ -260,7 +266,7 @@
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Có thuê xe theo giờ để đưa người nhà đi khám bệnh được không?</button>
-        <div class="faq-a"><p>Được. Gói theo giờ 450.000đ cho 4 giờ đầu, vượt giờ 90.000đ/giờ, xe chờ tại bệnh viện suốt buổi khám.</p></div>
+        <div class="faq-a"><p>Được. Gói theo giờ block 5 giờ 2.000.000đ, đã gồm tài xế và dầu, xe chờ tại bệnh viện suốt buổi khám.</p></div>
       </div>
     </div>
   </div>
@@ -352,6 +358,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

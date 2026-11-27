@@ -2,13 +2,18 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -48,9 +54,9 @@
   "image": "https://www.thuexekiacarnival.vn/images/xe/ngoai-that-truoc-02.jpg",
   "offers": {
     "@type": "Offer",
-    "price": "450000",
+    "price": "2000000",
     "priceCurrency": "VND",
-    "description": "Giá thuê xe theo giờ từ 450.000đ, tối thiểu 4 giờ/40km, phục vụ khu Bình Thạnh và các cao ốc văn phòng lân cận"
+    "description": "Giá thuê xe theo giờ block 5 giờ 2.000.000đ, gồm tài xế và dầu, phục vụ khu Bình Thạnh và các cao ốc văn phòng lân cận"
   }
 }
 </script>
@@ -136,7 +142,7 @@
       <a href="/thue-xe-theo-gio.html" class="card">
         <div class="card-icon">⏱️</div>
         <h3>Theo Giờ</h3>
-        <p>450.000đ<br>tối thiểu 4h/40km</p>
+        <p>2.000.000đ<br>block 5 giờ, gồm dầu</p>
       </a>
       <a href="/thue-xe-theo-ngay.html" class="card">
         <div class="card-icon">📅</div>
@@ -164,7 +170,7 @@
       <p>Bình Thạnh là quận có vị trí chiến lược, chỉ cách trung tâm Quận 1 một cây cầu — cầu Sài Gòn nối Điện Biên Phủ hoặc cầu Thị Nghè nối vào khu vực Đa Kao. Đây cũng là nơi tọa lạc của tòa tháp Landmark 81, cao ốc cao nhất Việt Nam, cùng nhiều trung tâm thương mại và văn phòng hạng A quanh khu vực Vinhomes Central Park, Vincom Center. Mật độ doanh nghiệp, ngân hàng, công ty đa quốc gia đặt văn phòng tại đây khiến nhu cầu xe đưa đón công tác, hội nghị luôn ở mức cao.</p>
       <p>Chúng tôi phục vụ các doanh nghiệp cần xe đưa đón lãnh đạo, đối tác giữa các cuộc họp tại nhiều tòa nhà trong ngày, hoặc đưa đón đoàn khách tham dự hội nghị, triển lãm tại các trung tâm sự kiện khu vực Bình Thạnh. Với khoảng cách gần trung tâm Q1, thời gian di chuyển giữa các điểm hẹn công tác thường chỉ 10-20 phút, giúp lịch trình làm việc trong ngày được sắp xếp dày đặc mà vẫn đúng giờ.</p>
       <h3>Phù Hợp Cho Lịch Trình Công Tác Nhiều Điểm Đến</h3>
-      <p>Nhiều khách hàng doanh nghiệp tại Bình Thạnh chọn gói thuê theo giờ (450.000đ, tối thiểu 4h) khi cần xe di chuyển linh hoạt giữa nhiều địa điểm trong nửa ngày làm việc — ví dụ từ văn phòng ở Landmark 81 sang họp tại Q1, rồi quay lại đón đối tác ở sân bay. Xe chờ tại điểm hẹn trong thời gian tính phí, không phát sinh chi phí ẩn.</p>
+      <p>Nhiều khách hàng doanh nghiệp tại Bình Thạnh chọn gói thuê theo giờ (block 5 giờ 2.000.000đ) khi cần xe di chuyển linh hoạt giữa nhiều địa điểm trong nửa ngày làm việc — ví dụ từ văn phòng ở Landmark 81 sang họp tại Q1, rồi quay lại đón đối tác ở sân bay. Xe chờ tại điểm hẹn trong thời gian tính phí, không phát sinh chi phí ẩn.</p>
       <p>Đội ngũ tài xế mặc đồng phục lịch sự, am hiểu quy định ra vào các tòa nhà văn phòng lớn, giúp quy trình đón/trả khách tại sảnh các cao ốc diễn ra chuyên nghiệp, không gây chậm trễ cho lịch trình công tác của khách hàng.</p>
     </div>
   </div>
@@ -283,6 +289,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

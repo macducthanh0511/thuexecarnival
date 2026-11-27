@@ -83,7 +83,7 @@ body="""
 <li><strong>Chùa Ngọc Hoàng (Đa Kao):</strong> nổi tiếng cầu duyên, cầu tự.</li>
 <li><strong>Chùa Bà Thiên Hậu (Chợ Lớn):</strong> hội quán người Hoa cổ kính, khói nhang trầm mặc ngày Tết.</li>
 </ul>
-<p>Ba điểm này cách nhau vài km, đi trong khoảng 4-5 giờ là vừa — phù hợp gói <a href="/thue-xe-theo-gio.html">thuê xe theo giờ</a> 450.000đ cho 4 giờ đầu, vượt giờ 90.000đ/giờ. Tài xế thả cả nhà sát cổng chùa rồi chờ ở điểm đỗ được phép, gọi là có xe ngay.</p>
+<p>Ba điểm này cách nhau vài km, đi trong khoảng 4-5 giờ là vừa — phù hợp gói <a href="/thue-xe-theo-gio.html">thuê xe theo giờ</a> 5 giờ 2.000.000đ cho block 5 giờ, đã gồm tài xế và dầu. Tài xế thả cả nhà sát cổng chùa rồi chờ ở điểm đỗ được phép, gọi là có xe ngay.</p>
 
 <h2>Lịch trình cả ngày: chùa + đường hoa</h2>
 <p>Sáng đi chùa, trưa ăn uống, chiều dạo đường hoa Nguyễn Huệ và đường sách. Khu trung tâm ngày Tết cấm xe nhiều tuyến, nên tài xế sẽ thả và đón ở các điểm được phép quanh khu vực. Dùng gói <a href="/thue-xe-theo-ngay.html">thuê xe 7 chỗ theo ngày</a> 2.300.000đ (8 giờ/80km) để thong thả. Gợi ý thêm các điểm tham quan tại bài <a href="/blog/thue-xe-carnival-city-tour-sai-gon.html">city tour Sài Gòn 1 ngày</a>.</p>
@@ -104,7 +104,7 @@ body="""
 <p>Đặt xe du xuân qua <a href="tel:0906868764">090.6868.764</a>.</p>
 """,
 faqs=[
-("Thuê xe đi chùa đầu năm nên chọn gói nào?", "Đi 2-3 chùa nội thành trong 4-5 giờ nên chọn gói theo giờ 450.000đ cho 4 giờ đầu; đi cả ngày kết hợp đường hoa nên chọn gói ngày 2.300.000đ."),
+("Thuê xe đi chùa đầu năm nên chọn gói nào?", "Đi 2-3 chùa nội thành trong 4-5 giờ nên chọn gói theo giờ 2.000.000đ cho block 5 giờ; đi cả ngày kết hợp đường hoa nên chọn gói ngày 2.300.000đ."),
 ("Mùng 1 Tết có thuê được xe có tài xế không?", "Có, nhưng xe kín lịch rất sớm; nên đặt từ tháng 12 và xác nhận giá dịp Tết bằng tin nhắn."),
 ("Đi Núi Bà Đen dịp Tết có đi về trong ngày được không?", "Được, nhưng nên khởi hành từ sáng sớm vì mùng 1-10 Tết lượng khách lên núi rất đông."),
 ],
@@ -114,7 +114,7 @@ P(
 slug="thue-xe-dua-don-tiec-tat-nien-cong-ty",
 title="Thuê Xe Đưa Đón Tiệc Tất Niên, Year End Party Công Ty Cuối Năm",
 seo_title="Thuê Xe Đưa Đón Tiệc Tất Niên Công Ty – Theo Giờ, Có Tài Xế",
-desc="Thuê xe 7 chỗ có tài xế đưa đón tiệc tất niên, year end party công ty: đón ban lãnh đạo, khách mời VIP, đưa nhân viên về an toàn. Gói theo giờ từ 450.000đ.",
+desc="Thuê xe 7 chỗ có tài xế đưa đón tiệc tất niên, year end party công ty: đón ban lãnh đạo, khách mời VIP, đưa nhân viên về an toàn. Gói theo giờ 2.000.000đ/block 5 giờ.",
 og_desc="Giải pháp đưa đón lãnh đạo, khách mời và nhân viên an toàn trong mùa tiệc cuối năm.",
 card_desc="Đưa đón lãnh đạo, khách mời và nhân viên an toàn trong mùa tiệc cuối năm.",
 category="Doanh nghiệp", date=D, read=6,
@@ -136,11 +136,11 @@ body="""
 <div class="table-scroll"><table class="rate-table">
 <thead><tr><th>Nhu cầu</th><th>Gói gợi ý</th><th>Giá</th></tr></thead>
 <tbody>
-<tr><td>Đón lãnh đạo/khách → tiệc → đưa về (4 giờ)</td><td>Theo giờ</td><td>450.000đ / 4 giờ đầu</td></tr>
-<tr><td>Tiệc kéo dài 5-6 giờ</td><td>Theo giờ + vượt giờ</td><td>+90.000đ / giờ</td></tr>
+<tr><td>Đón lãnh đạo/khách → tiệc → đưa về (trong 5 giờ)</td><td>Theo giờ</td><td>2.000.000đ / block 5 giờ</td></tr>
+<tr><td>Tiệc kéo dài 6-10 giờ</td><td>Theo ngày</td><td>2.500.000đ / 10 giờ</td></tr>
 <tr><td>Đưa đón cả ngày (hội nghị + tiệc tối)</td><td>Theo ngày 10 giờ/100km</td><td>2.500.000đ</td></tr>
 </tbody></table></div>
-<p>Ví dụ: tiệc từ 17h30 đến 22h, xe đón lãnh đạo lúc 17h và đưa về lúc 22h30 — tổng 5,5 giờ, chi phí khoảng 450.000đ + 2 × 90.000đ = 630.000đ cho một xe 7 chỗ. Chi tiết gói tại <a href="/thue-xe-theo-gio.html">thuê xe 7 chỗ theo giờ</a> và bài <a href="/blog/khi-nao-nen-thue-xe-carnival-theo-gio.html">khi nào nên thuê theo giờ</a>.</p>
+<p>Ví dụ: tiệc từ 17h30 đến 22h, xe đón lãnh đạo lúc 17h và đưa về lúc 22h30 — tổng 5,5 giờ, vượt một block 5 giờ nên chọn gói ngày 2.500.000đ cho một xe 7 chỗ sẽ thoải mái hơn. Chi tiết gói tại <a href="/thue-xe-theo-gio.html">thuê xe 7 chỗ theo giờ</a> và bài <a href="/blog/khi-nao-nen-thue-xe-carnival-theo-gio.html">khi nào nên thuê theo giờ</a>.</p>
 
 <h2>Đoàn đông cần nhiều xe</h2>
 <p>Với công ty cần đưa đón 20-30 người, có thể đặt nhiều xe Carnival chạy song song theo các cụm địa chỉ (khu Đông, khu Nam, trung tâm), giúp mọi người về nhà nhanh hơn một xe lớn đi vòng. Hãy gửi danh sách địa chỉ dự kiến khi đặt để được sắp xếp lộ trình tối ưu.</p>
@@ -155,7 +155,7 @@ body="""
 <p>Liên hệ <a href="tel:0906868764">090.6868.764</a> để giữ xe cho đêm tiệc của công ty bạn.</p>
 """,
 faqs=[
-("Thuê xe đưa đón tiệc tất niên giá bao nhiêu?", "Gói theo giờ 450.000đ cho 4 giờ đầu, vượt giờ 90.000đ/giờ; đưa đón cả ngày dùng gói 10 giờ/100km giá 2.500.000đ."),
+("Thuê xe đưa đón tiệc tất niên giá bao nhiêu?", "Gói theo giờ block 5 giờ 2.000.000đ, đã gồm tài xế và dầu; đưa đón cả ngày dùng gói 10 giờ/100km giá 2.500.000đ."),
 ("Nên đặt xe cho tiệc tất niên trước bao lâu?", "Nên đặt trước 2-3 tuần, nhất là các tối thứ Sáu, thứ Bảy tháng 12 vì trùng mùa cưới và mùa tiệc doanh nghiệp."),
 ("Có xuất hóa đơn cho doanh nghiệp không?", "Có thể yêu cầu hóa đơn khi đặt xe để doanh nghiệp hạch toán chi phí sự kiện."),
 ],

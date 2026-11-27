@@ -2,13 +2,18 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -62,7 +68,7 @@
       "name": "Phí vượt giờ khi thuê xe có tài xế tính thế nào?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gói theo giờ tính 90.000đ cho mỗi giờ vượt, gói theo ngày tính 100.000đ/giờ, tính từ lúc đón đến lúc trả khách."
+        "text": "Gói theo ngày tính 100.000đ cho mỗi giờ vượt; tính từ lúc đón đến lúc trả khách."
       }
     },
     {
@@ -70,7 +76,7 @@
       "name": "Phí vượt km khi thuê xe Carnival là bao nhiêu?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Gói theo giờ 12.000đ/km, gói theo ngày 10.000đ/km cho phần vượt định mức của gói."
+        "text": "Gói theo ngày tính 10.000đ/km cho phần vượt định mức 100km."
       }
     },
     {
@@ -174,12 +180,11 @@
 <p>"Giá thuê xe bao nhiêu?" là câu hỏi đầu tiên, nhưng câu hỏi quan trọng hơn là "tổng cộng cuối chuyến tôi phải trả bao nhiêu?". Rất nhiều khách bất ngờ khi nhận hóa đơn vì không nắm rõ các khoản <strong>phí phát sinh khi thuê xe có tài xế</strong>. Bài viết này giải thích từng khoản, kèm ví dụ tính tiền cụ thể theo bảng giá Kia Carnival VIP để bạn chủ động dự trù ngân sách.</p>
 
 <h2>1. Giá gói gồm những gì?</h2>
-<p>Mỗi gói thuê có tài xế đều gắn với một <strong>định mức giờ và km</strong>. Ví dụ gói ngày 2.500.000đ gồm 10 giờ và 100km; gói giờ 450.000đ gồm 4 giờ đầu. Giá đã bao gồm xe, tài xế, nhiên liệu trong định mức và bảo hiểm. Mọi khoản vượt ngoài định mức mới phát sinh thêm.</p>
+<p>Mỗi gói thuê có tài xế đều gắn với một <strong>định mức giờ và km</strong>. Ví dụ gói ngày 2.500.000đ gồm 10 giờ và 100km; gói giờ 2.000.000đ gồm block 5 giờ, đã có tài xế và dầu. Giá đã bao gồm xe, tài xế, nhiên liệu trong định mức và bảo hiểm. Mọi khoản vượt ngoài định mức mới phát sinh thêm.</p>
 
 <h2>2. Phí vượt giờ</h2>
 <p>Tính từ lúc tài xế đón khách đến lúc trả khách xong. Mức hiện hành:</p>
 <ul>
-<li>Gói theo giờ: <strong>90.000đ/giờ</strong> vượt.</li>
 <li>Gói theo ngày: <strong>100.000đ/giờ</strong> vượt.</li>
 </ul>
 <p>Mẹo: nếu lịch trình dài hơn 10 giờ hoặc đi xa, hãy báo trước để được tư vấn giá tuyến hoặc gói khứ hồi — thường rẻ hơn cộng dồn phí vượt giờ và vượt km.</p>
@@ -190,7 +195,6 @@
 
 <h2>3. Phí vượt km</h2>
 <ul>
-<li>Gói theo giờ: <strong>12.000đ/km</strong> vượt.</li>
 <li>Gói theo ngày: <strong>10.000đ/km</strong> vượt.</li>
 </ul>
 <p>Km được tính theo đồng hồ xe từ điểm đón đến điểm trả. Với các tuyến đi tỉnh như Vũng Tàu, Mũi Né, Cần Thơ, nên chọn <strong>giá theo tuyến</strong> (đã tính sẵn quãng đường) thay vì gói ngày để tránh vượt km.</p>
@@ -208,7 +212,7 @@
 <h3>Ví dụ 1: Đi đám cưới cả ngày trong nội thành</h3>
 <p>Gói 10 giờ/100km: 2.500.000đ. Thực tế đi 12 giờ, 115km → vượt 2 giờ × 100.000đ + 15km × 10.000đ = 350.000đ. <strong>Tổng: 2.850.000đ.</strong> Nếu đi trong 10 giờ và 100km thì chỉ trả đúng 2.500.000đ.</p>
 <h3>Ví dụ 2: Đưa đón 5 tiếng, 50km</h3>
-<p>Gói giờ 450.000đ (4 giờ đầu) + 1 giờ vượt × 90.000đ = <strong>540.000đ</strong> (cộng phí vượt km nếu quá định mức gói).</p>
+<p>Đưa đón 5 tiếng nằm gọn trong một block theo giờ: <strong>2.000.000đ</strong>, đã gồm tài xế và dầu. Nếu kéo dài 7-8 tiếng, chọn gói ngày 2.500.000đ sẽ lợi hơn.</p>
 <h3>Ví dụ 3: Đi Vũng Tàu khứ hồi trong ngày</h3>
 <p>Chọn giá tuyến khứ hồi 4.000.000đ thay vì gói ngày, vì quãng đường khứ hồi khoảng 200-250km sẽ vượt xa định mức 80-100km.</p>
 
@@ -217,9 +221,9 @@
 
 <h2>Câu hỏi thường gặp</h2>
 <h3>Phí vượt giờ khi thuê xe có tài xế tính thế nào?</h3>
-<p>Gói theo giờ tính 90.000đ cho mỗi giờ vượt, gói theo ngày tính 100.000đ/giờ, tính từ lúc đón đến lúc trả khách.</p>
+<p>Gói theo ngày tính 100.000đ cho mỗi giờ vượt; tính từ lúc đón đến lúc trả khách.</p>
 <h3>Phí vượt km khi thuê xe Carnival là bao nhiêu?</h3>
-<p>Gói theo giờ 12.000đ/km, gói theo ngày 10.000đ/km cho phần vượt định mức của gói.</p>
+<p>Gói theo ngày tính 10.000đ/km cho phần vượt định mức 100km.</p>
 <h3>Đi tỉnh nên chọn gói ngày hay giá theo tuyến?</h3>
 <p>Nên chọn giá theo tuyến vì đã tính sẵn quãng đường, tránh phát sinh phí vượt km như khi dùng gói ngày 80-100km.</p>
 
@@ -307,6 +311,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>

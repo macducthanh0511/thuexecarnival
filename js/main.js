@@ -47,7 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  initMotion();
+  // Hiệu ứng chỉ bật sau khi trang đã tải xong và trình duyệt rảnh,
+  // để không chiếm CPU lúc trang đang hiển thị lần đầu.
+  function startMotion() {
+    var idle = window.requestIdleCallback || function (cb) { return setTimeout(cb, 200); };
+    idle(initMotion, { timeout: 2000 });
+  }
+  if (document.readyState === 'complete') startMotion();
+  else window.addEventListener('load', startMotion);
 });
 
 /* ===== Hiệu ứng cuộn trang ===== */
@@ -55,27 +62,31 @@ function initMotion() {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce || !('IntersectionObserver' in window)) return;
   var root = document.documentElement;
-  root.classList.add('js-motion');
 
-  // Thanh tiến độ đọc
-  var bar = document.createElement('div');
-  bar.className = 'scroll-progress';
-  bar.setAttribute('aria-hidden', 'true');
-  document.body.appendChild(bar);
-
-  // Gắn hiệu ứng xuất hiện cho các khối nội dung (không áp dụng cho banner đầu trang)
+  // Gom phần tử cần hiệu ứng; bỏ qua banner và mọi thứ đang nằm trên màn hình
+  // (đọc vị trí một lượt rồi mới ghi, tránh tính lại bố cục nhiều lần)
   var groups = [
     ['.section-head', ''], ['.card', ''], ['.price-card', ''], ['.step', ''], ['.testi', ''],
     ['.faq-item', ''], ['.info-line', 'left'], ['.badge-list span', ''],
     ['.photo-frame', 'photo'], ['.post-gallery figure', 'photo'], ['.related-guide', ''],
     ['.prose h2', 'left'], ['.prose table', ''], ['.cta-band .container', '']
   ];
+  var vh = window.innerHeight, picked = [];
   groups.forEach(function (g) {
     document.querySelectorAll(g[0]).forEach(function (el) {
-      if (el.closest('.hero') || el.closest('.site-header') || el.hasAttribute('data-reveal')) return;
-      el.setAttribute('data-reveal', g[1]);
+      if (el.closest('.hero') || el.closest('.site-header') || el.closest('.showcase')) return;
+      picked.push([el, g[1]]);
     });
   });
+  var below = picked.filter(function (x) { return x[0].getBoundingClientRect().top > vh; });
+
+  root.classList.add('js-motion');
+  // Thanh tiến độ đọc
+  var bar = document.createElement('div');
+  bar.className = 'scroll-progress';
+  bar.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(bar);
+  below.forEach(function (x) { x[0].setAttribute('data-reveal', x[1]); });
   // Lệch nhịp cho các phần tử cùng hàng
   document.querySelectorAll('[data-reveal]').forEach(function (el) {
     var sib = el.parentElement ? Array.prototype.filter.call(el.parentElement.children, function (c) { return c.hasAttribute('data-reveal'); }) : [];
@@ -86,11 +97,13 @@ function initMotion() {
     entries.forEach(function (en) {
       if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
     });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  }, { rootMargin: '0px 0px 12% 0px', threshold: 0 });
   document.querySelectorAll('[data-reveal]').forEach(function (el) { io.observe(el); });
 
   // Số đếm tăng dần
-  var counters = document.querySelectorAll('.stat-num');
+  var counters = Array.prototype.filter.call(document.querySelectorAll('.stat-num'), function (c) {
+    return c.getBoundingClientRect().top > vh;
+  });
   var cio = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (!en.isIntersecting) return;
@@ -111,7 +124,7 @@ function initMotion() {
   counters.forEach(function (c) { cio.observe(c); });
 
   // Parallax ảnh và showcase cuộn ngang
-  var layers = Array.prototype.slice.call(document.querySelectorAll('.photo-frame picture, [data-parallax]'));
+  var layers = Array.prototype.slice.call(document.querySelectorAll('.photo-frame[data-reveal] picture, [data-parallax]'));
   var showcase = document.querySelector('.showcase');
   var track = showcase && showcase.querySelector('.showcase__track');
   var ghost = showcase && showcase.querySelector('.showcase__ghost');

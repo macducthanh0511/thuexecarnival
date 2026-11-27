@@ -41,7 +41,7 @@ PAGES = [
  ],
  "faq_title": "Câu Hỏi Về Thuê Xe Tại Thủ Đức",
  "faqs": [
-    ("Thuê xe Carnival ở Thủ Đức có tính thêm phí đón không?", "Không. Giá thuê áp dụng thống nhất toàn TP.HCM: theo giờ 450.000đ cho 4 giờ đầu, theo ngày 2.500.000đ cho 10 giờ/100km, đã gồm tài xế, xăng trong định mức và bảo hiểm."),
+    ("Thuê xe Carnival ở Thủ Đức có tính thêm phí đón không?", "Không. Giá thuê áp dụng thống nhất toàn TP.HCM: theo giờ 2.000.000đ cho block 5 giờ (gồm tài xế và dầu), theo ngày 2.500.000đ cho 10 giờ/100km, đã gồm tài xế, xăng trong định mức và bảo hiểm."),
     ("Có đón trong Khu Công nghệ cao, khu chế xuất Linh Trung không?", "Có. Tài xế đón tại cổng hoặc sảnh nhà máy theo hướng dẫn của bạn; nếu cần đăng ký xe ra vào, hãy gửi trước biển số và tên tài xế mà chúng tôi cung cấp khi xác nhận lịch."),
     ("Từ Thủ Đức đi Vũng Tàu mất bao lâu?", "Thường khoảng 2 giờ đến 2 giờ 30 phút qua cao tốc Long Thành – Dầu Giây và cao tốc Biên Hòa – Vũng Tàu, tùy giờ xuất phát. Giá 1 chiều 2.000.000đ, khứ hồi trong ngày 4.000.000đ."),
     ("Nên đặt xe trước bao lâu?", "Ngày thường nên đặt trước 2–3 giờ; chuyến sáng sớm, cuối tuần và dịp lễ Tết nên đặt từ 1–3 ngày trước để chắc chắn có xe."),

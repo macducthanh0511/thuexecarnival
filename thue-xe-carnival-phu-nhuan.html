@@ -2,13 +2,18 @@
 <html lang="vi">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4YGYG2JRJF');
+  // Tải thư viện GA sau khi trang hiển thị xong để không làm chậm lần tải đầu
+  window.addEventListener('load', function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4YGYG2JRJF';
+    document.head.appendChild(s);
+  });
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +31,7 @@
 <link rel="preload" href="/fonts/bevietnampro-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/bevietnampro-400-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/oswald-vietnamese.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/style.css">
 <script type="application/ld+json">
 {
@@ -48,9 +54,9 @@
   "image": "https://www.thuexekiacarnival.vn/images/xe/ngoai-that-goc-34-05.jpg",
   "offers": {
     "@type": "Offer",
-    "price": "450000",
+    "price": "2000000",
     "priceCurrency": "VND",
-    "description": "Giá thuê xe theo giờ từ 450.000đ, tối thiểu 4 giờ/40km, phục vụ khu Phú Nhuận và tuyến trung chuyển sân bay - nội thành"
+    "description": "Giá thuê xe theo giờ block 5 giờ 2.000.000đ, gồm tài xế và dầu, phục vụ khu Phú Nhuận và tuyến trung chuyển sân bay - nội thành"
   }
 }
 </script>
@@ -136,7 +142,7 @@
       <a href="/thue-xe-theo-gio.html" class="card">
         <div class="card-icon">⏱️</div>
         <h3>Theo Giờ</h3>
-        <p>450.000đ<br>tối thiểu 4h/40km</p>
+        <p>2.000.000đ<br>block 5 giờ, gồm dầu</p>
       </a>
       <a href="/thue-xe-theo-ngay.html" class="card">
         <div class="card-icon">📅</div>
@@ -284,6 +290,6 @@
   <a href="https://zalo.me/0906868764" class="mobile-cta__btn mobile-cta__btn--zalo" aria-label="Chat Zalo 090.6868.764" target="_blank" rel="noopener">Zalo</a>
 </div>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 </body>
 </html>
